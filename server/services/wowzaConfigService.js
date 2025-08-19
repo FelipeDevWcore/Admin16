@@ -958,14 +958,14 @@ class WowzaConfigService {
    * Gera o conteúdo do aliasmap.play.txt
    */
   generateAliasMapPlay(nome) {
-    return `${nome} ${nome}`;
+    return `${nome}=\${Stream.Name}`;
   }
 
   /**
    * Gera o conteúdo do aliasmap.stream.txt
    */
   generateAliasMapStream(nome) {
-    return `${nome} ${nome}`;
+    return `*=\${Stream.Name}`;
   }
 
   /**
